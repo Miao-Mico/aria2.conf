@@ -1,13 +1,15 @@
 #!/usr/bin/env bash
-#=========================================================
+#
+# Copyright (c) 2018-2020 P3TERX <https://p3terx.com>
+#
+# This is free software, licensed under the MIT License.
+# See /LICENSE for more information.
+#
 # https://github.com/P3TERX/aria2.conf
 # File name：move.sh
 # Description: Move files after Aria2 download is complete
-# Lisence: MIT
-# Version: 1.1
-# Author: P3TERX
-# Blog: https://p3terx.com
-#=========================================================
+# Version: 2.0
+#
 
 # Aria2下载目录
 DOWNLOAD_PATH='/root/Download'
@@ -46,7 +48,7 @@ ${LIGHT_PURPLE_FONT_PREFIX}Target path:${FONT_COLOR_SUFFIX} ${TARGET_PATH}
 MOVE_FILE() {
     echo -e "$(date +"%m/%d %H:%M:%S") ${INFO} Start move files ..."
     TASK_INFO
-    mkdir -p ${TARGET_PATH}
+    mkdir -p "${TARGET_PATH}"
     mv -f "${SOURCE_PATH}" "${TARGET_PATH}"
     MOVE_EXIT_CODE=$?
     if [ ${MOVE_EXIT_CODE} -eq 0 ]; then

@@ -49,7 +49,7 @@
 
 | 文件                    | 说明                                                                                                                                                                                                                                                                 |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `aria2.conf`            | Aria2 配置文件。仅适用于 Aria2 1.35.0 及以上版本，在不了解的情况下修改可能导致本方案的特性失效。                                                                                                                                                                     |
+| `aria2.conf`            | Aria2 配置文件。建议使用 1.35.0 及以上版本，在不了解的情况下修改可能导致本方案的特性失。效。                                                                                                                                                                     |
 | `delete.sh`             | 文件删除脚本。在下载停止后执行([on-download-stop](https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-on-download-stop))，自动删除文件及 `.aria2` 后缀名文件，防止不必要的磁盘空间占用。（默认启用）                                                        |
 | `clean.sh`              | 清理脚本。在下载完成后执行([on-download-complete](https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-on-download-complete))，自动清除 `.aria2` 后缀名文件。（默认启用）                                                                                    |
 | `upload.sh`             | 上传脚本。在下载完成后执行([on-download-complete](https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-on-download-complete))，自动调用 RCLONE 上传(move)下载的文件到网盘，并自动清除 `.aria2` 后缀名文件与空目录。（默认不启用）                        |
@@ -63,21 +63,20 @@
 
 ## 更新日志
 
+**全新版本即将来袭，敬请期待...**
+
 更新推送：[Aria2 Channel](https://t.me/Aria2_Channel)
 
-### 2020-06-27
-
-**Aria2 完美配置 v2 终极版**
+### 2020-06-27 | V2 终极版
 
 配置文件(`aria2.conf`)：
-- 优化选项参数，继续提升下载速度与使用体验
+- 优化选项参数，提升下载速度与使用体验
 - 优化排版格式及注释说明，提升阅读体验
 
 附加功能脚本：
 - `delete.aria2.sh`更名为`clean.sh`
 - `autoupload.sh`更名为`upload.sh`
 - 细节改进，提升使用体验
-- 为新版脚本做准备
 
 <details>
 <summary>历史记录</summary>
